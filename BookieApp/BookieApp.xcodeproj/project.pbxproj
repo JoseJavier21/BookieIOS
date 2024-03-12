@@ -64,9 +64,9 @@
 				3D66DC7F2B9F7EF400948047 /* IntroducirUbicacionView.swift */,
 				3DDD960F2B9F82B300ABEDE2 /* ListaLibros.swift */,
 				3DBC66E42B9F7BF8001A6B90 /* ContentView.swift */,
+				3DDD96112B9F85A400ABEDE2 /* VistaCeldaLibro.swift */,
 				3DBC66E62B9F7BF9001A6B90 /* Assets.xcassets */,
 				3DBC66E82B9F7BF9001A6B90 /* Preview Content */,
-				3DDD96112B9F85A400ABEDE2 /* VistaCeldaLibro.swift */,
 			);
 			path = BookieApp;
 			sourceTree = "<group>";
