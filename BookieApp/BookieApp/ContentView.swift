@@ -13,9 +13,9 @@ struct ContentView: View {
     @State var contrasenia: String = ""
     @State var toggle: Bool = false
     
-    
-    @State var showError: Bool = false
-    @State var errorMessage: String = ""
+    @State var mostrarContrasenia: Bool = false
+
+
     
     var body: some View {
         
@@ -35,13 +35,31 @@ struct ContentView: View {
                 .padding(.top,130)
                 .textContentType(.emailAddress)
             
-            SecureField("Contraseña", text: $contrasenia)
-                .bold()
-                .padding()
-                .background(Color.color)
-                .cornerRadius(30)
-                .padding(.top, 40)
-            
+            ZStack(alignment: .trailingFirstTextBaseline) {
+                if mostrarContrasenia {
+                    TextField("Contraseña", text: $contrasenia)
+                        .padding()
+                        .background(Color.color)
+                        .cornerRadius(30)
+                        .padding(.top, 40)
+                 
+                } else {
+                    SecureField("Contraseña", text: $contrasenia)
+                        .padding()
+                        .background(Color.color)
+                        .cornerRadius(30)
+                        .padding(.top, 40)
+                }
+
+                Button(action: {
+                    mostrarContrasenia.toggle()
+                }) {
+                    Image(systemName: mostrarContrasenia ? "eye.fill" : "eye.slash.fill")
+                        .foregroundColor(.primary)
+                        .padding(10)
+                }
+                .padding(.trailing, 15)
+            }
             HStack {
                 Toggle("",isOn: $toggle)
                 Text("Recordar contraseña")
