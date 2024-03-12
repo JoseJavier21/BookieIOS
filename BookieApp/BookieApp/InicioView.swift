@@ -43,7 +43,7 @@ struct InicioView: View {
                   
                             
                         Image(systemName: "star")
-                            .frame(width: 166, height: 100)
+                            .frame(width: 166, height: 1000)
                             .background(Color.gray)
                             .cornerRadius(20)
                             .padding(.bottom, 295)
