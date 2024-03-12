@@ -13,13 +13,22 @@ struct VistaCeldaLibro: View {
         VStack{
             
             Image(systemName: "globe")
-                .frame(width: 150, height: 150)
+                .frame(width: 166, height: 196)
                 .foregroundColor(.blue)
                 .background(Color.gray, in: .rect)
+                .cornerRadius(20)
             
-            Text("nombre del libro")
+            Text("Harry Potter y la piedra filosofal")
+                .padding(.trailing, 10)
+                .font(.subheadline)
+                //.multilineTextAlignment(.trailing)
         }
+        .padding([.top, .bottom], 20)
+    
+        
+        
     }
+    
 }
 
 #Preview {

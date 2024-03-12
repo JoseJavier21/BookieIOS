@@ -42,6 +42,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D75B27E2BA0CF6A00B14A09 /* Vistas */ = {
+			isa = PBXGroup;
+			children = (
+				3DDD96112B9F85A400ABEDE2 /* VistaCeldaLibro.swift */,
+				3DDD960F2B9F82B300ABEDE2 /* ListaLibros.swift */,
+				3DBC66E42B9F7BF8001A6B90 /* ContentView.swift */,
+				3D66DC7F2B9F7EF400948047 /* IntroducirUbicacionView.swift */,
+				3D9FBFF82BA0C2AC001BFFDD /* InicioView.swift */,
+				3D8826F52B9F7DFD00CF248C /* RegistroView.swift */,
+			);
+			path = Vistas;
+			sourceTree = "<group>";
+		};
 		3DBC66D62B9F7BF8001A6B90 = {
 			isa = PBXGroup;
 			children = (
@@ -61,13 +74,8 @@
 		3DBC66E12B9F7BF8001A6B90 /* BookieApp */ = {
 			isa = PBXGroup;
 			children = (
+				3D75B27E2BA0CF6A00B14A09 /* Vistas */,
 				3DBC66E22B9F7BF8001A6B90 /* BookieAppApp.swift */,
-				3D8826F52B9F7DFD00CF248C /* RegistroView.swift */,
-				3D66DC7F2B9F7EF400948047 /* IntroducirUbicacionView.swift */,
-				3DDD960F2B9F82B300ABEDE2 /* ListaLibros.swift */,
-				3DBC66E42B9F7BF8001A6B90 /* ContentView.swift */,
-				3D9FBFF82BA0C2AC001BFFDD /* InicioView.swift */,
-				3DDD96112B9F85A400ABEDE2 /* VistaCeldaLibro.swift */,
 				3DBC66E62B9F7BF9001A6B90 /* Assets.xcassets */,
 				3DBC66E82B9F7BF9001A6B90 /* Preview Content */,
 			);
