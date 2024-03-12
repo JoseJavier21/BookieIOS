@@ -16,11 +16,11 @@ struct ListaLibros: View {
 
         NavigationStack{
             
-            
-            List{
-                Text("sdfsdg")
-                Text("dfsdfsg")
-            }
+//            LazyHGrid(rows: 2, content: {
+//                List{
+//                    VistaCeldaLibro()
+//                }
+//            })
             
             
             
