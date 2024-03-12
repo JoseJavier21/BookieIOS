@@ -15,6 +15,7 @@
 		3D51AEC32BA0D18B006FB53E /* BibliotecaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D51AEC22BA0D18B006FB53E /* BibliotecaView.swift */; };
 		3D66DC802B9F7EF400948047 /* IntroducirUbicacionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D66DC7F2B9F7EF400948047 /* IntroducirUbicacionView.swift */; };
 		3D8826F62B9F7DFD00CF248C /* RegistroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D8826F52B9F7DFD00CF248C /* RegistroView.swift */; };
+		3DBA58FE2BA0E668001454DD /* InicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBA58FD2BA0E668001454DD /* InicioView.swift */; };
 		3DBC66E32B9F7BF8001A6B90 /* BookieAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DBC66E22B9F7BF8001A6B90 /* BookieAppApp.swift */; };
 		3DBC66E72B9F7BF9001A6B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC66E62B9F7BF9001A6B90 /* Assets.xcassets */; };
 		3DBC66EA2B9F7BF9001A6B90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DBC66E92B9F7BF9001A6B90 /* Preview Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		3D51AEC22BA0D18B006FB53E /* BibliotecaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BibliotecaView.swift; sourceTree = "<group>"; };
 		3D66DC7F2B9F7EF400948047 /* IntroducirUbicacionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroducirUbicacionView.swift; sourceTree = "<group>"; };
 		3D8826F52B9F7DFD00CF248C /* RegistroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroView.swift; sourceTree = "<group>"; };
+		3DBA58FD2BA0E668001454DD /* InicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioView.swift; sourceTree = "<group>"; };
 		3DBC66DF2B9F7BF8001A6B90 /* BookieApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookieApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DBC66E22B9F7BF8001A6B90 /* BookieAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookieAppApp.swift; sourceTree = "<group>"; };
 		3DBC66E62B9F7BF9001A6B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				3D0BB4F12BA0CAEE000875D9 /* TabBarListView.swift */,
 				3D51AEC22BA0D18B006FB53E /* BibliotecaView.swift */,
 				3DDD96112B9F85A400ABEDE2 /* VistaCeldaLibro.swift */,
+				3DBA58FD2BA0E668001454DD /* InicioView.swift */,
 				3D0BB4F52BA0CC0B000875D9 /* BuzonView.swift */,
 				3D0BB4F72BA0CC17000875D9 /* PerfilView.swift */,
 				3DBC66E62B9F7BF9001A6B90 /* Assets.xcassets */,
@@ -165,6 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D8826F62B9F7DFD00CF248C /* RegistroView.swift in Sources */,
+				3DBA58FE2BA0E668001454DD /* InicioView.swift in Sources */,
 				3D0BB4F22BA0CAEE000875D9 /* TabBarListView.swift in Sources */,
 				3D0BB4F82BA0CC17000875D9 /* PerfilView.swift in Sources */,
 				3DDD96122B9F85A400ABEDE2 /* VistaCeldaLibro.swift in Sources */,
