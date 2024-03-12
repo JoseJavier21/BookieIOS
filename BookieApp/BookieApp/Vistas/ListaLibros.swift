@@ -15,6 +15,8 @@ struct ListaLibros: View {
         GridItem(.flexible(minimum: 50, maximum: 200), spacing: 0)
     ]
     
+
+    
     var body: some View {
         
 
@@ -27,16 +29,12 @@ struct ListaLibros: View {
                     .padding([.top, .bottom], 5)
                 
                 ScrollView(.vertical){
-                    
+
                     LazyVGrid(columns: columnas, content: {
-                        VistaCeldaLibro()
-                        VistaCeldaLibro()
-                        VistaCeldaLibro()
-                        VistaCeldaLibro()
-                        VistaCeldaLibro()
-                        VistaCeldaLibro()
-                        VistaCeldaLibro()
-                        VistaCeldaLibro()
+                        
+                        NavigationLink(destination: DetalleLibro()){
+                            VistaCeldaLibro()
+                        }
                         
                     })
                 }
