@@ -1,46 +1,40 @@
+
 //
-//  RegistroView.swift
+//  ContentView.swift
 //  BookieApp
 //
 //  Created by dam2 on 11/3/24.
-//
+//º
 
 import SwiftUI
 
-struct RegistroView: View {
+struct ContentView: View {
     
-    @State var nombre: String = ""
-    @State var repetirContrasenia: String = ""
     @State var correo: String = ""
     @State var contrasenia: String = ""
+    @State var toggle: Bool = false
     
     @State var mostrarContrasenia: Bool = false
-    @State var mostrarContrasenia1: Bool = false
 
 
+    
     var body: some View {
+        
         VStack {
             
-            Text("Registro")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            Text("Bienvenido")
+                .font(.title)
                 .bold()
                 .padding()
             
             
-            TextField("Nombre", text: $nombre)
-                .bold()
-                .padding()
-                .background(Color.color)
-                .cornerRadius(30)
-                .padding(.top,90)
-            
-            TextField("Correo electronico", text: $nombre)
+            TextField("Correo electronico", text: $correo)
                 .bold()
                 .padding()
                 .background(Color.color)
                 .cornerRadius(30)
-                .padding(.top,40)
-                
+                .padding(.top,130)
+                .textContentType(.emailAddress)
             
             ZStack(alignment: .trailingFirstTextBaseline) {
                 if mostrarContrasenia {
@@ -67,40 +61,25 @@ struct RegistroView: View {
                 }
                 .padding(.trailing, 15)
             }
-
-            
-            ZStack(alignment: .trailingFirstTextBaseline) {
-                if mostrarContrasenia1 {
-                    TextField("Contraseña", text: $repetirContrasenia)
-                        .padding()
-                        .background(Color.color)
-                        .cornerRadius(30)
-                        .padding(.top, 40)
-                 
-                } else {
-                    SecureField("Contraseña", text: $repetirContrasenia)
-                        .padding()
-                        .background(Color.color)
-                        .cornerRadius(30)
-                        .padding(.top, 40)
-                }
-
-                Button(action: {
-                    mostrarContrasenia1.toggle()
-                }) {
-                    Image(systemName: mostrarContrasenia1 ? "eye.fill" : "eye.slash.fill")
-                        .foregroundColor(.primary)
-                        .padding(10)
-                }
-                .padding(.trailing, 15)
+            HStack {
+                Toggle("",isOn: $toggle)
+                Text("Recordar contraseña")
             }
+            .frame(width: 400)
+            .padding(.top, 20)
+            .padding(.trailing, 200.0)
+            .toggleStyle(SwitchToggleStyle(tint: Color.button))
             
-          
             
-
-     
-            Button("Siguiente"){
-                
+            
+            Button("¿Has olvidado la contraseña?"){
+            }
+            .padding(.top, 20)
+            .foregroundColor(.black)
+            
+            
+            
+            Button("Iniciar sesión"){
             }
             .padding(20)
             .padding(.horizontal, 30)
@@ -110,12 +89,22 @@ struct RegistroView: View {
             .padding([.leading, .trailing], 10)
             .padding(.top, 75)
             
-      
+            
+            Button("Crear cuenta"){
+                
+            }
+            .padding(.top, 30)
+            .foregroundColor(.black)
+            
             
         }
         .padding()
+        
     }
 }
+
+
+
 #Preview {
-    RegistroView()
+    ContentView()
 }
