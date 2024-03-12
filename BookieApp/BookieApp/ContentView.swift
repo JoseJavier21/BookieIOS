@@ -1,3 +1,4 @@
+
 //
 //  ContentView.swift
 //  BookieApp
@@ -22,7 +23,7 @@ struct ContentView: View {
         VStack {
             
             Text("Bienvenido")
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                .font(.title)
                 .bold()
                 .padding()
             
