@@ -13,7 +13,7 @@ struct InicioView: View {
     
     var body: some View {
         
-        ScrollView {
+        ScrollView{
             VStack{
                 
                 
@@ -28,29 +28,6 @@ struct InicioView: View {
                     .cornerRadius(20)
                 
                 HStack{
-              
-                    VStack{
-                        
-                        
-                        Image(systemName: "star")
-                            .frame(width: 167, height: 196)
-                            .background(Color.gray)
-                            .cornerRadius(20)
-                           .padding(.bottom, 200)
-                        
-                        
-                       
-                  
-                            
-                        Image(systemName: "star")
-                            .frame(width: 166, height: 100)
-                            .background(Color.gray)
-                            .cornerRadius(20)
-                            .padding(.bottom, 295)
-                        
-                           
-                        
-                }
                     
                     VStack{
                         
@@ -59,27 +36,50 @@ struct InicioView: View {
                             .frame(width: 167, height: 196)
                             .background(Color.gray)
                             .cornerRadius(20)
-                           .padding(.bottom, 200)
+                            .padding(.bottom, 200)
                         
                         
-                       
-                  
-                            
+                        
+                        
+                        
                         Image(systemName: "star")
                             .frame(width: 166, height: 100)
                             .background(Color.gray)
                             .cornerRadius(20)
                             .padding(.bottom, 295)
                         
-                           
                         
+                        
+                    }
+                    
+                    VStack{
+                        
+                        
+                        Image(systemName: "star")
+                            .frame(width: 167, height: 196)
+                            .background(Color.gray)
+                            .cornerRadius(20)
+                            .padding(.bottom, 200)
+                        
+                        
+                        
+                        
+                        
+                        Image(systemName: "star")
+                            .frame(width: 166, height: 100)
+                            .background(Color.gray)
+                            .cornerRadius(20)
+                            .padding(.bottom, 295)
+                        
+                        
+                        
+                    }
+                    
                 }
                 
-            }
-            
-               
                 
-                    
+                
+                
             }
         }
             
